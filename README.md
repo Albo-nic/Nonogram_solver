@@ -1,0 +1,1 @@
+The objective of this project is to create a solver for nonogram puzzles. Two sequences of lists of integers with length n and m will be given, where the numbers represesnt in the list with index i represent how many spaces are to be continuously filled in in the i-th row or column of an mxn grid. The code will not be able to detect if a puzzle is solvable.
