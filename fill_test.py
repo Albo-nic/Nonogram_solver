@@ -15,7 +15,7 @@ repeat = 50 # Number of times each fill is tested
 
 start = 0 # Lowest fill value to be tested
 stop = 1 # Highest fill value to be tested
-number = 4 # Number of tested fill values between "start" and "stop", int greater than 1
+number = 65 # Number of tested fill values between "start" and "stop", int greater than 1
 
 ####################################################
 
@@ -45,6 +45,7 @@ if do_row == True:
     plt.plot(x_points, r_ypoints, label="recursive_row_solve")
 
 
+plt.title("Time duration of puzzle solution with regard to proportion of filled cells")
 plt.xlabel("Puzzle fill")
 plt.ylabel("Average time duration of solution")
 plt.legend()
