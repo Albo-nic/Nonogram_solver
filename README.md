@@ -44,4 +44,6 @@ check_solution(np.array([[-1,  1, -1, -1, -1],
        
 returns True
 
+**fill_test.py and size_test.py**
+
 Also included are two programs for comparing time duration of different solution methods with regard to proportion of filled cells or size of solved puzzle. Various parameters that can be tweaked are explained in the comments of the code.
