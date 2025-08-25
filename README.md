@@ -28,7 +28,11 @@ On complexity: Nonograms are an NP-complete problem, and the time complexity of 
 These functions solve the nonogram either by guessing cells in DFS (recursive_cell_solve) or generating all possible row solutions and guessing from those 
 (recursive_row_solve). Both are significantly slower than hybrid_solve when solving bigger puzzles.
 
-**plot_solution(matrix):**: If given None, does nothing, if given a 2-dimensional np.array containing 1 and -1, it plots the solution. In the previous example "plot_solution(hybrid_solve(((1,), (2,), (4,), (1, 1), (1, 1)), ((1,), (5, ), (1,), (3,), (1,))))", shows:
+**plot_solution(matrix):**: If given None, does nothing, if given a 2-dimensional np.array containing 1 and -1, it plots the solution. In the previous example:
+
+plot_solution(hybrid_solve(((1,), (2,), (4,), (1, 1), (1, 1)), ((1,), (5, ), (1,), (3,), (1,))))
+
+shows:
 
 <img width="220" height="217.2" alt="image" src="https://github.com/user-attachments/assets/79103424-c645-4800-918e-b318adfa28ed" />
 
