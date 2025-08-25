@@ -9,7 +9,7 @@ print("Program started")
 repeat = 10 # Number of times each size is tested
 fill = 0.5 # Fill of tested nonograms
 
-max_hybrid_size = 18 # maximum size of nonogram soleved with "hybrid_solve"
+max_hybrid_size = 20 # maximum size of nonogram soleved with "hybrid_solve"
 max_row_size = 7 # maximum size of nonogram soleved with "recursive_row_solve"
 max_cell_size = 6 # maximum size of nonogram soleved with "recursive_cell_solve"
 
@@ -31,6 +31,7 @@ ypoints = [timeit.timeit(f"p = main.random_nonogram({x},{x},{fill})\nmain.recurs
 plt.plot(xpoints, ypoints, label = "recursive_cell_solve")
 print("recursive_cell_solve done!")
 
+plt.title("Time duration of puzzle solution with regard to side length of puzzle")
 plt.xlabel = "Side length"
 plt.ylabel = "Average time duration of solution"
 
